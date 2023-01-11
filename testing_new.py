@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-URL = "www.wikipedia.com"
+URL = "wikipedia.com"
 print("Trying: ",URL)
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, "html.parser")
